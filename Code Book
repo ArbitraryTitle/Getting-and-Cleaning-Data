@@ -1,0 +1,17 @@
+test_sub - dataframe for holding subject_test.txt
+train_sub - dataframe for holding subject_train.tx
+test_feature - dataframe for holding X_test.txt
+train_feature - dataframe for holding X_train.txt
+test_activities - dataframe for holding Y_test.txt
+train_activities - dataframe for holding Y_train.txt
+feature_labels - dataframe for holding features.txt
+sub - dataframe to hold rbind of train_sub and test_sub
+feature - dataframe to hold rbind of test_feature and train_feature
+act_number - dataframe to hold rbind of test_activities and train_activities (named such since data is only numbers until this data is modified by the activity_labels.txt file)
+act_labels - dataframe fod holding activity_labels.txt
+activity - dataframe to join act_number and act_labels (I could never get this to retaint he correct order)
+feature_vector - a vector to hold the labels column from feature_labels
+feature_mean_stdev - test to find columns that have are standard deviation or mean based
+feature_vector2 - to hold a vector of just columns that include mean or standard deviation
+everything - cbind of sub, feature and activity (ended up using act_number since I could not get activity to work correctly)
+tidy - dataframe to work with to create tidy data
